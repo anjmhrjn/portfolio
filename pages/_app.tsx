@@ -1,5 +1,4 @@
 import { AppProps } from "next/app";
-import { Analytics } from "@vercel/analytics/react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/argon-design-system-react.css";
 import "../styles/styles.css";
