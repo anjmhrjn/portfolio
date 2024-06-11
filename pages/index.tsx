@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import { Analytics } from "@vercel/analytics/react"
 const Navigation = dynamic(() => import("../components/Navigation"));
 const Greetings = dynamic(() => import("../containers/Greetings"));
 const Skills = dynamic(() => import("../containers/Skills"));
@@ -24,7 +23,6 @@ export default function Home({ githubProfileData }: { githubProfileData: any }) 
       <Experience />
       <Projects />
       <GithubProfileCard {...githubProfileData} />
-      <Analytics />
     </div>
   );
 }
