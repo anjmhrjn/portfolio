@@ -110,6 +110,14 @@ export const SkillBars: SkillBarsType[] = [
 
 export const educationInfo: EducationType[] = [
   {
+    schoolName: "The University of Toledo: College of Engineering",
+    subHeader: "Masters of Science: Computer Science and Engineering",
+    duration: "August 2024 - Present",
+    desc: "",
+    grade: "",
+    descBullets: [], // Array of Strings
+  },
+  {
     schoolName: "Softwarica College of IT and E-Commerce (Coventry University)",
     subHeader: "Bachelor of Science (Hons.) in Computing",
     duration: "September 2019 - November 2022",
@@ -124,7 +132,7 @@ export const experience: ExperienceType[] = [
     role: "Full Stack Developerr",
     company: "Digi Technology Pvt. Ltd.",
     companyLogo: "/img/icons/common/digitechnology.png",
-    date: "Aug 2022 - Present",
+    date: "Aug 2022 - Jul 2024",
     desc: "I crafted backend and frotend for web applications. Created APIs necessary for mobile app development. Implemented scheduling jobs to automate various tasks related to the system. Collaborated across teams to surpass client expectations. Designed intuitive UIs, empowering clients to effortlessly manage their applications with a visually captivating interface.",
   },
   {
