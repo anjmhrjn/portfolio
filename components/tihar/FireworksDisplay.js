@@ -45,7 +45,7 @@ export default function FireworksDisplay({ setShowFireworks }) {
 
   useEffect(() => {
     if (containerRef.current) {
-      const fireworks = new Fireworks(containerRef.current, {currentOptions: fireworksOptions});
+      const fireworks = new Fireworks(containerRef.current, {});
       fireworks.start();
 
       // Cleanup when the component unmounts
