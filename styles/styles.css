@@ -1,3 +1,253 @@
 body > div:first-child {
   overflow-x: hidden;
 }
+
+/* tihar styles */
+.main-bg {
+  background-color: #1b234a;
+  min-height: 100vh;
+}
+
+.lightsContainer {
+  position: absolute;
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.string {
+  position: relative;
+  width: 50%; /* Width of the string (curve) */
+  height: 100px;
+  border-top: 3px solid white; /* Top line representing string */
+  border-radius: 50% 50% 0 0; /* Curve the line */
+}
+
+.bulb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: opacity 0.5s ease; /* Smooth transition for blinking */
+}
+
+/* Colors for on/off states */
+.on {
+  background-color: #ffa500; /* Light on color */
+  opacity: 1;
+}
+
+.off {
+  background-color: #ffa500; /* Light off color */
+  opacity: 0.3;
+}
+
+.position0 {
+  top: 13px;
+  left: 5%;
+}
+
+.position1 {
+  top: 0px;
+  left: 20%;
+}
+
+.position2 {
+  top: -8px;
+  left: 40%;
+}
+
+.position3 {
+  top: -5px;
+  left: 60%;
+}
+
+.position4 {
+  top: 2px;
+  left: 80%;
+}
+
+.position5 {
+  top: 20px;
+  left: 95%;
+}
+
+.starburst {
+  aspect-ratio: 1;
+  clip-path: polygon(
+    100% 50%,
+    77.03% 63.02%,
+    81.17% 89.09%,
+    56.68% 79.25%,
+    38.87% 98.75%,
+    31.3% 73.45%,
+    4.95% 71.69%,
+    20% 50%,
+    4.95% 28.31%,
+    31.3% 26.55%,
+    38.87% 1.25%,
+    56.68% 20.75%,
+    81.17% 10.91%,
+    77.03% 36.98%
+  );
+}
+
+.flower {
+  position: relative;
+  width: 150px; /* Overall flower size */
+  height: 150px;
+}
+
+.petal-border-radius {
+  border-radius: 50% 50% 40% 40%;
+}
+
+.petal {
+  position: absolute;
+  width: 60px; /* Width of each petal */
+  height: 100px; /* Height of each petal */
+  /* Creates a rounded petal shape */
+  transform-origin: bottom center;
+}
+
+.petal:nth-child(1) {
+  transform: rotate(0deg) translateY(-30px);
+}
+.petal:nth-child(2) {
+  transform: rotate(60deg) translateY(-30px);
+}
+.petal:nth-child(3) {
+  transform: rotate(120deg) translateY(-30px);
+}
+.petal:nth-child(4) {
+  transform: rotate(180deg) translateY(-30px);
+}
+.petal:nth-child(5) {
+  transform: rotate(240deg) translateY(-30px);
+}
+.petal:nth-child(6) {
+  transform: rotate(300deg) translateY(-30px);
+}
+
+/* Center of the flower */
+.center {
+  position: absolute;
+  border-radius: 50%;
+  top: 40%;
+  left: 20%;
+}
+
+
+/* heart shaped petals */
+
+.heart {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top center;
+/*   transform: rotate(-45deg) translate(-50%, -50%); */
+}
+
+/* Create the heart shape by using before and after pseudo-elements */
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: inherit;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+}
+
+.heart:before {
+  bottom: -30px;
+  left: 0;
+}
+
+.heart:after {
+  top: 0;
+  left: 30px;
+}
+
+/* Position each heart around the center to form a flower shape */
+.heart:nth-child(1) {
+  transform: rotate(45deg) translate(0px, -70px);
+}
+
+.heart:nth-child(2) {
+  transform: rotate(135deg) translate(-50px, -150px);
+}
+
+.heart:nth-child(3) {
+  transform: rotate(-45deg) translate(-80px, -40px);
+}
+
+.heart:nth-child(4) {
+  transform: rotate(225deg) translate(-110px, -100px);
+}
+
+.borders-with-spikes {
+  aspect-ratio: 1;
+  clip-path: polygon(
+    100% 50%,
+    93.72% 54.93%,
+    98.75% 61.13%,
+    91.53% 64.53%,
+    95.05% 71.69%,
+    87.26% 73.41%,
+    89.09% 81.17%,
+    81.11% 81.11%,
+    81.17% 89.09%,
+    73.41% 87.26%,
+    71.69% 95.05%,
+    64.53% 91.53%,
+    61.13% 98.75%,
+    54.93% 93.72%,
+    50% 100%,
+    45.07% 93.72%,
+    38.87% 98.75%,
+    35.47% 91.53%,
+    28.31% 95.05%,
+    26.59% 87.26%,
+    18.83% 89.09%,
+    18.89% 81.11%,
+    10.91% 81.17%,
+    12.74% 73.41%,
+    4.95% 71.69%,
+    8.47% 64.53%,
+    1.25% 61.13%,
+    6.28% 54.93%,
+    0% 50%,
+    6.28% 45.07%,
+    1.25% 38.87%,
+    8.47% 35.47%,
+    4.95% 28.31%,
+    12.74% 26.59%,
+    10.91% 18.83%,
+    18.89% 18.89%,
+    18.83% 10.91%,
+    26.59% 12.74%,
+    28.31% 4.95%,
+    35.47% 8.47%,
+    38.87% 1.25%,
+    45.07% 6.28%,
+    50% 0%,
+    54.93% 6.28%,
+    61.13% 1.25%,
+    64.53% 8.47%,
+    71.69% 4.95%,
+    73.41% 12.74%,
+    81.17% 10.91%,
+    81.11% 18.89%,
+    89.09% 18.83%,
+    87.26% 26.59%,
+    95.05% 28.31%,
+    91.53% 35.47%,
+    98.75% 38.87%,
+    93.72% 45.07%
+  );
+}
