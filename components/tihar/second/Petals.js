@@ -4,7 +4,7 @@ import InnerLayer from "../InnerLayer";
 export default function Petals({ rangoliData }) {
   return (
     <div className="">
-      <div class="flower">
+      <div className="flower">
         {[...Array(6)].map((_, index) => (
           <div
             key={index}
