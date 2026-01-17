@@ -82,7 +82,7 @@ export function ChatInput({ typing, setTyping, setIsTyping, setMessages }: Props
     return (
         <div className="border-t px-3 py-2">
             <textarea
-                disabled={loading}
+                disabled={loading || typing.length > 0}
                 className="w-full resize-none rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring-1"
                 rows={2}
                 placeholder="Ask about my experience..."
@@ -98,10 +98,10 @@ export function ChatInput({ typing, setTyping, setIsTyping, setMessages }: Props
             <div className="flex justify-end mt-2">
                 <button
                     onClick={handleSend}
-                    disabled={loading}
+                    disabled={loading || typing.length > 0}
                     className="rounded-md bg-black px-3 py-1.5 text-xs text-white disabled:opacity-50"
                 >
-                    {loading ? "Sending…" : "Send"}
+                    {(loading || typing.length > 0) ? "Sending…" : "Send"}
                 </button>
             </div>
         </div>
