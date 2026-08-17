@@ -54,6 +54,17 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
                 'HTML': 'bg-violet-100 text-violet-800',
                 'RAG': 'bg-orange-100 text-orange-800',
                 'Generative AI': 'bg-pink-100 text-pink-800',
+                'Databricks': 'bg-red-100 text-red-800',
+                'Apache Spark': 'bg-amber-100 text-amber-800',
+                'Delta Lake': 'bg-sky-100 text-sky-800',
+                'Data Engineering': 'bg-lime-100 text-lime-800',
+                'LangChain': 'bg-green-100 text-green-800',
+                'FastAPI': 'bg-teal-100 text-teal-800',
+                'Next.js': 'bg-slate-200 text-slate-800',
+                'Machine Learning': 'bg-fuchsia-100 text-fuchsia-800',
+                'Docker': 'bg-blue-100 text-blue-800',
+                'C++': 'bg-rose-100 text-rose-800',
+                'CSS': 'bg-violet-100 text-violet-800',
               }[tag] || 'bg-gray-100 text-gray-800';
 
               return (

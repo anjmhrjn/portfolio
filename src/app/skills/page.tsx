@@ -28,6 +28,14 @@ const skillPage = () => {
             <SkillsFooter items={portfolioConfig.skills.languagesAndFrameworks} />
           </div>
         </FramerWrapper>
+        <FramerWrapper className="block w-full" y={100} delay={0.31}>
+          <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl mb-4">
+            Data Engineering
+          </h1>
+          <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
+            <SkillsFooter items={portfolioConfig.skills.dataEngineering} />
+          </div>
+        </FramerWrapper>
         <FramerWrapper className="block w-full" y={100} delay={0.32}>
           <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl mb-4">
             AI/ML/Generative AI

@@ -22,7 +22,7 @@ const educationPage = () => {
               y={0}
               x={-100}
               delay={0.35 + index * 0.1}
-              className="w-1/4 font-rubik flex items-center justify-evenly text-lg max-sm:text-base"
+              className="w-1/4 font-rubik flex items-center text-lg max-sm:text-base"
             >
               {edu.period}
             </FramerWrapper>

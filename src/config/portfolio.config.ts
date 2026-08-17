@@ -2,8 +2,9 @@ export const portfolioConfig = {
   // Basic Information
   name: "Anuj Maharjan",
   title: "Software Engineer",
+  headline: "Software Engineer | Data Engineer | AWS & Databricks Certified",
   description: "I am a Passionate Software Developer",
-  location: "Toledo, Ohio, USA",
+  location: "Cleveland, Ohio, USA",
 
   // Contact Information
   email: "anjmhrjn1@gmail.com", // Replace with actual email if available
@@ -27,6 +28,7 @@ export const portfolioConfig = {
       "AI Engineer Portfolio",
       "Machine Learning Engineer Portfolio",
       "Full Stack Developer Portfolio",
+      "Data Engineer Portfolio",
       "Generative AI Engineer",
       "AI Solutions Developer",
       "Cloud Native Software Engineer",
@@ -37,16 +39,31 @@ export const portfolioConfig = {
       "React Developer Portfolio",
       "FastAPI Developer",
       "Node.js Backend Developer",
+      "SQL Developer",
 
       "Machine Learning Projects",
       "Deep Learning Projects",
       "Generative AI Applications",
       "LLM Application Development",
+      "LLM Fine-Tuning",
+      "Agentic RAG",
       "RAG Systems",
+      "Vector Database",
       "OpenAI API Integration",
       "LangChain Projects",
       "NLP Projects",
       "OCR Machine Learning",
+
+      "Databricks Data Engineer",
+      "Databricks Certified Data Engineer Associate",
+      "Apache Spark Developer",
+      "PySpark Developer",
+      "Delta Lake Lakehouse",
+      "Medallion Architecture",
+      "Dimensional Modeling",
+      "ETL Pipeline Developer",
+      "Data Pipeline Engineer",
+      "Unity Catalog",
 
       "AWS Machine Learning Engineer",
       "AWS AI Engineer",
@@ -69,7 +86,9 @@ export const portfolioConfig = {
 
       "Software Engineer USA",
       "Machine Learning Engineer USA",
-      "AI Engineer Ohio"
+      "Data Engineer USA",
+      "AI Engineer Ohio",
+      "Software Engineer Cleveland"
     ],
     authors: [
       {
@@ -81,7 +100,8 @@ export const portfolioConfig = {
 
   // About Information
   about: {
-    bio: "I’m a full stack software engineer with a strong foundation in machine learning and distributed systems. I’ve built and deployed production-grade applications that combine modern web frameworks with cloud and AI infrastructure. I’m currently pursuing a Master’s in Computer Science and actively building systems at the intersection of software engineering and applied AI.",
+    bio: "I’m a software engineer and certified data engineer with 3+ years of experience building scalable backend systems, Spark-based lakehouse pipelines on Databricks, and production-grade AI workflows. I work day to day in Python, SQL, and cloud-native architecture, with hands-on experience in dimensional modeling, medallion pipeline design, and LLM orchestration.",
+    yearsOfExperience: "3+",
     whatIDo: [
       {
         title: "AI-Powered Applications",
@@ -90,6 +110,10 @@ export const portfolioConfig = {
       {
         title: "Machine Learning Systems",
         description: "Train, evaluate, and deploy end-to-end ML pipelines."
+      },
+      {
+        title: "Data Engineering",
+        description: "Build Spark and Databricks lakehouse pipelines from ingestion to gold."
       },
       {
         title: "Full-Stack Development",
@@ -112,10 +136,11 @@ export const portfolioConfig = {
   // Skills and Roles
   skills: {
     roles: [
-      "Graduate Student",
       "Machine Learning Practitioner",
       "AI Systems Developer",
       "AWS Cloud Developer",
+      "Data Engineer",
+      "Databricks Developer",
     ],
     // Technical Skills
     languagesAndFrameworks: [
@@ -134,6 +159,10 @@ export const portfolioConfig = {
       {
         name: "TypeScript",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "SQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
       },
       {
         name: "React",
@@ -161,26 +190,68 @@ export const portfolioConfig = {
       },
 
     ],
+    dataEngineering: [
+      {
+        name: "Apache Spark",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg",
+      },
+      { name: "Databricks", icon: "https://cdn.simpleicons.org/databricks" },
+      // No public Delta Lake icon exists on the CDNs used here; reusing the Databricks mark.
+      { name: "Delta Lake", icon: "https://cdn.simpleicons.org/databricks" },
+    ],
     aimlgenai: [
       { name: "LangChain", icon: "https://cdn.simpleicons.org/langchain" },
       { name: "PyTorch", icon: "https://cdn.simpleicons.org/pytorch" },
       { name: "TensorFlow", icon: "https://cdn.simpleicons.org/tensorflow" },
       { name: "OpenAI", icon: "https://cdn.simpleicons.org/openaigym" },
+      { name: "Pandas", icon: "https://cdn.simpleicons.org/pandas" },
+      { name: "NumPy", icon: "https://cdn.simpleicons.org/numpy" },
+      { name: "Scikit-learn", icon: "https://cdn.simpleicons.org/scikitlearn" },
+      { name: "Claude Code", icon: "https://cdn.simpleicons.org/claude" },
     ],
     cloud: [
       { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
       { name: "Docker", icon: "https://cdn.simpleicons.org/docker" },
-      { name: "Git", icon: "https://cdn.simpleicons.org/git" }
+      { name: "Git", icon: "https://cdn.simpleicons.org/git" },
+      { name: "CI/CD", icon: "https://cdn.simpleicons.org/githubactions" }
     ],
     databases: [
       { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql" },
       { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
       { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb" },
+      { name: "DynamoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dynamodb/dynamodb-original.svg" },
+      { name: "Qdrant", icon: "https://cdn.simpleicons.org/qdrant" },
     ],
     toolsAndProductivity: [
       { name: "GitHub", icon: "https://cdn.simpleicons.org/github" },
     ]
   },
+
+  // Work Experience
+  experience: [
+    {
+      role: "Software Engineer",
+      company: "DigiTechnology Nepal",
+      period: "August 2022 - July 2024",
+      highlights: [
+        "Architected core backend services supporting 1,000+ concurrent users, designing for fault tolerance and data integrity across mission-critical operations.",
+        "Built the reporting and visualization layer of a learning management system, replacing a third-party reporting tool and saving $1,500 in annual licensing fees.",
+        "Developed an in-house drag-and-drop document builder using React, Node.js, and NoSQL, cutting document generation time by 50% and eliminating external SaaS dependencies.",
+        "Optimized RESTful API and CI/CD workflows in collaboration with cross-functional stakeholders, improving deployment reliability and reducing system response times by 40%.",
+      ],
+    },
+    {
+      role: "Software Developer",
+      company: "Kaii Group",
+      period: "August 2021 - July 2022",
+      highlights: [
+        "Engineered a structured automated data ingestion pipeline to extract, normalize, and load domain data, improving workflow efficiency by 30% and eliminating manual intervention across the data lifecycle.",
+        "Built backend services with Django Rest Framework and implemented an automated regression test suite, reducing production-level bugs by 25% through systematic coverage of critical code paths.",
+        "Diagnosed and resolved database performance bottlenecks through query analysis and schema optimization, improving PostgreSQL response times by 35%.",
+        "Delivered secure CRM software with role-based access control and token-based session management.",
+      ],
+    },
+  ],
 
   // Education Information
   education: [
@@ -188,9 +259,9 @@ export const portfolioConfig = {
       degree: "Master of Science in Computer Science and Engineering",
       institution: "The University of Toledo",
       location: "Toledo, Ohio, USA",
-      period: "August 2024 - May 2026 (Expected)",
+      period: "August 2024 - May 2026",
       description:
-        "I am currently completing my Master’s in Computer Science with a specialization in Artificial Intelligence, where I work on building practical AI applications and exploring advanced machine learning techniques. My studies focus on turning complex data into actionable insights and scalable AI solutions.",
+        "I completed my Master’s in Computer Science with a specialization in Artificial Intelligence, where I worked on building practical AI applications and exploring advanced machine learning techniques. My studies focused on turning complex data into actionable insights and scalable AI solutions.",
     },
     {
       degree: "Bachelor of Science (Hons.) in Computing",
@@ -202,22 +273,62 @@ export const portfolioConfig = {
     },
   ],
 
+  // Certifications
+  certifications: [
+    {
+      name: "Databricks Certified Data Engineer Associate",
+      issuer: "Databricks",
+      date: "August 2026",
+    },
+    {
+      name: "AWS Certified Machine Learning Engineer – Associate",
+      issuer: "Amazon Web Services",
+      date: "August 2025",
+    },
+    {
+      name: "AWS Certified Developer – Associate",
+      issuer: "Amazon Web Services",
+      date: "March 2025",
+    },
+  ],
+
   // Projects Information
   projects: [
     {
-      title: "Persoanl RAG Chatbot",
+      title: "Medallion Lakehouse Pipeline on Databricks",
+      description:
+        "A bronze/silver/gold lakehouse built as a five-task Databricks Workflow DAG, enforcing validity rules at silver and modeling gold as a Delta Lake star schema with surrogate keys and foreign key constraints. It ships as a Databricks Asset Bundle whose dev and prod targets derive every schema, volume, and trigger from a single variable, with Unity Catalog governance and incremental Auto Loader ingestion.",
+      tags: ["Python", "Databricks", "Apache Spark", "Delta Lake", "Data Engineering"],
+      link: "https://github.com/anjmhrjn/dabs-taxi",
+    },
+    {
+      title: "Agent-Orchestrated Adaptive RAG",
+      description:
+        "A multi-agent LangChain system that classifies query intent and routes requests to domain-specific vector namespaces, replacing flat single-index retrieval and improving answer precision across complex technical knowledge bases. Self-RAG evaluation loops score retrieval quality and flag stale context before generation, cutting the manual review needed to trust output in production-facing AI workflows.",
+      tags: ["Python", "LangChain", "RAG", "Generative AI"],
+      link: "https://github.com/anjmhrjn/agentic-rag",
+    },
+    {
+      title: "Personal RAG Chatbot",
       description:
         "An AI-powered chatbot that leverages Retrieval-Augmented Generation to answer questions from custom documents. It provides accurate, context-aware responses and helps users interact with large text data efficiently.",
       tags: ["Python", "RAG", "Generative AI"],
       link: "https://github.com/anjmhrjn/rag-chatbot",
     },
-    
+
     {
       title: "Policy Navigator",
       description:
         "Policy Navigator is a domain-specific AI assistant designed to support public health policy analysis using grounded, evidence-based responses. The system follows a Retrieval-Augmented Generation (RAG) architecture to ensure answers are derived strictly from authoritative policy documents rather than model assumptions.",
       tags: ["Python", "RAG", "Generative AI"],
       link: "https://github.com/anjmhrjn/rag-policy-navigator",
+    },
+    {
+      title: "Hybrid Document Retrieval",
+      description:
+        "A document ingestion and hybrid search platform where users upload PDF, DOCX, TXT, and Markdown files and query them in natural language. It fuses semantic vector search over Qdrant with BM25 keyword matching through Reciprocal Rank Fusion, and ships fully Dockerized with JWT auth, per-user document isolation, and a Next.js frontend.",
+      tags: ["Python", "FastAPI", "Next.js", "PostgreSQL", "Docker", "Generative AI"],
+      link: "https://github.com/anjmhrjn/document-retrieval",
     },
     {
       title: "schoolworkspro",

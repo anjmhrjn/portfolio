@@ -114,29 +114,23 @@
 }
 
 @keyframes text-slide {
-  0%,
-  20% {
-    transform: translateY(0%);
-  }
-
-  25%,
-  45% {
-    transform: translateY(-25%);
-  }
-
-  50%,
-  70% {
-    transform: translateY(-50%);
-  }
-
-  75%,
-  95% {
-    transform: translateY(-75%);
-  }
-
-  100% {
-    transform: translateY(-100%);
-  }
+  /* Item 1 */
+  0%, 15% { transform: translateY(0); }
+  
+  /* Item 2 */
+  20%, 35% { transform: translateY(-35px); } /* Moves up by the container height */
+  
+  /* Item 3 */
+  40%, 55% { transform: translateY(-70px); }
+  
+  /* Item 4 */
+  60%, 75% { transform: translateY(-105px); }
+  
+  /* Item 5 */
+  80%, 95% { transform: translateY(-145px); }
+  
+  /* Loop back to Item 1 smoothly */
+  100% { transform: translateY(0); }
 }
 
 @keyframes blink {
