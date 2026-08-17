@@ -1,4 +1,5 @@
 import { ChatMessage as ChatMessageType } from "./types";
+import { Markdown } from "./Markdown";
 import clsx from "clsx";
 
 interface Props {
@@ -17,7 +18,7 @@ export function ChatMessage({ message }: Props) {
           : "mr-auto bg-gray-100 text-gray-900"
       )}
     >
-      {message.content}
+      {isUser ? message.content : <Markdown content={message.content} />}
     </div>
   );
 }

@@ -231,7 +231,7 @@ export const portfolioConfig = {
   experience: [
     {
       role: "Software Engineer",
-      company: "DigiTechnology Nepal",
+      company: "DigiTechnology",
       period: "August 2022 - July 2024",
       highlights: [
         "Architected core backend services supporting 1,000+ concurrent users, designing for fault tolerance and data integrity across mission-critical operations.",
