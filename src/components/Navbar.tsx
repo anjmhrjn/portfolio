@@ -45,6 +45,13 @@ const Navbar = () => {
       href: '/skills',
     },
     {
+      title: 'Experience',
+      icon: (
+        <Briefcase className='h-full w-full ' />
+      ),
+      href: '/experience',
+    },
+    {
       title: 'Education',
       icon: (
         <GraduationCap className='h-full w-full ' />
