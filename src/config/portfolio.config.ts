@@ -50,7 +50,6 @@ export const portfolioConfig = {
       "RAG Systems",
       "Vector Database",
       "OpenAI API Integration",
-      "LangChain Projects",
       "NLP Projects",
       "OCR Machine Learning",
 
@@ -304,8 +303,8 @@ export const portfolioConfig = {
     {
       title: "Agent-Orchestrated Adaptive RAG",
       description:
-        "A multi-agent LangChain system that classifies query intent and routes requests to domain-specific vector namespaces, replacing flat single-index retrieval and improving answer precision across complex technical knowledge bases. Self-RAG evaluation loops score retrieval quality and flag stale context before generation, cutting the manual review needed to trust output in production-facing AI workflows.",
-      tags: ["Python", "LangChain", "RAG", "Generative AI"],
+        "A fully-local agentic RAG system in which an orchestrator routes each query across five retrieval strategies, coordinating query-classifier, decomposer, and answer-evaluator agents with a bounded two-retry reflection loop. Ran a dual-dataset ablation showing decomposition lifts MRR on structured retrieval but collapses it on multi-hop, and that reflection costs up to 6× latency for no reliable quality gain.",
+      tags: ["Python", "RAG", "Generative AI"],
       link: "https://github.com/anjmhrjn/agentic-rag",
     },
     {
